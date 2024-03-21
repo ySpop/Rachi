@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "SoraRegular";
+    src: url(../assets/fonts/Sora-Regular.ttf);
+
+    font-family: "SoraSemiBold";
+    src: url(../assets/fonts/Sora-SemiBold.ttf);
+
+    font-family: "InterRegular";
+    src: url(../assets/fonts/Inter-Regular.ttf);
+
+    font-family: "InterMedium";
+    src: url(../assets/fonts/Inter-Medium.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --corBanner:#EFF8FF;
+    --corCard2: #293145;
+    --titleFont: "SoraSemiBold";
+    --paragraphFont: "InterRegular";
+    --cardTitleFont: "SoraSemiBold";
+    --navItemsFont: "InterMedium";
+}
+
