@@ -22,9 +22,17 @@
 :root {
     --corBanner:#EFF8FF;
     --corCard2: #293145;
+    --buttonColor: #0F9AFE;
+    --contatoParagraphColor: #DBDBDB;
+    --titleColor: #293145;
     --titleFont: "SoraSemiBold";
     --paragraphFont: "InterRegular";
     --cardTitleFont: "SoraSemiBold";
     --navItemsFont: "InterMedium";
+    --paragraphColor: #6E7275;
+}
+
+@media screen and (max-width: 360px) {
+    
 }
 
