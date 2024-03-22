@@ -29,7 +29,6 @@
 }
 
 :root {
-    
         --corBanner:#EFF8FF;
         --corCard2: #293145;
         --buttonColor: #0F9AFE;
@@ -40,7 +39,8 @@
         --cardTitleFont: "SoraSemiBold";
         --navItemsFont: "InterMedium";
         --paragraphColor: #6E7275;
-    }
+        --footerFont: "SoraRegular";
+}
 
 
 .container-grid {
@@ -48,11 +48,15 @@
     margin: 0 auto;
 }
 
+@media screen and (max-width: 360px) {
+    
+
+}
+
 header {
     width: 100%;
     height:40px;
     background-color: #ffffff;
-    border: 2px solid black;
 }
 
 .headerContent {
@@ -62,12 +66,10 @@ header {
 }
 
 .headerContent>img {
-    border: 2px solid black;
 }
 
 .headerContent>nav {
     width: 50%;
-    border: 2px solid violet;
 }
 
 .headerContent>nav>ul {
@@ -96,7 +98,6 @@ header {
 
 .bannerContent{
     height: 80%;
-    border:  2px solid black;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -105,17 +106,15 @@ header {
 .bannerContent>img{
     width: 390px ;
     height: 100%;
-    border: 2px solid black;
 }
 
 .bannerContent>div{
-    width: 360px;
-    border: 2px solid black;
+    width: 4200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 35px;
-
+    
 }
 
 .bannerContent>div>h1{
@@ -245,7 +244,7 @@ header {
 
 .plans {
     width: 100%;
-    height: 550px;
+    height: 580px;
     background-color: white;
     display: flex;
     align-items: center;
@@ -332,7 +331,7 @@ header {
 .cardBody-prata .btnPreferido {
     background-color: var(--buttonColor);
     width: 135px;
-    height: 25px;
+    height: 22px;
     border-radius: 18px;
     border: none;
     color: white;
@@ -365,14 +364,14 @@ header {
 }
 
 .cardBody>div {
-    width: 110px;
+    width: 140px;
     height: 35px;
-    border: 2px solid red;
     display: flex;
     align-items: center;
     color: var(--titleColor);
     font-family: "Roboto", sans-serif;
     font-weight: 600;
+    font-size: 22px;
 }
 
 .cardBody>div>span {
@@ -380,7 +379,114 @@ header {
     height: 100%;
     display: flex;
     align-items: flex-start;
-    font-size: 19px;
+    font-size: 21px;
+}
+
+.cardBody-prata>div {
+    width: 140px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    color: var(--titleColor);
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
+}
+
+.cardBody-prata>div>span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    font-size: 21px;
+}
+
+.contact{
+    width: 100%;
+    height: 300px; 
+    display: flex;
+    background-image: url(../assets/images/computer.png);
+    background-position: 5px;
+    background-size: cover;
+}
+.contactContent{
+    width: 100%;
+    height: 100%;
+    background-color: #293145B2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div1{
+    width: 410px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.div1>h1{
+    font-family: var(--titleFont);
+    color: white;
+    font-size: 35px;
 }
 
 
+.div1>p{
+    color: var(--contatoParagraphColor);
+    font-family: var(--paragraphFont);
+    font-size: 14px;
+}
+
+.div2{
+    height:40px ;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div2>input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    width: 220px;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+.div2>input::placeholder{
+    color: white;
+}
+
+.div2>button{
+    background-color: var(--buttonColor);
+    width: 95px;
+    height: 30px;
+    border-radius: 18px;
+    border: none;
+    color: white;
+    font-family: var(--navItemsFont);
+    border: none;
+}
+
+footer {
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--footerFont);
+    font-size: 15px;
+}
+
+
+                                /* abaixo mobile */
+
+@media screen and (min-widht:360px) and (max-widht:760px)
