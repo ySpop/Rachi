@@ -514,6 +514,7 @@ footer {
     width: 40px;
     background-color: transparent;
     z-index: 2;
+    border: 2px solid red;
   }
 
   .headerContent > nav {
