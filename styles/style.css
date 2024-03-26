@@ -1,481 +1,489 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @font-face {
-  font-family: "SoraSemiBold";
-  src: url(../assets/fonts/Sora-SemiBold.ttf);
+    font-family: "SoraSemiBold";
+    src: url(../assets/fonts/Sora-SemiBold.ttf);
 }
 
 @font-face {
-  font-family: "SoraRegular";
-  src: url(../assets/fonts/Sora-Regular.ttf);
+    font-family: "SoraRegular";
+    src: url(../assets/fonts/Sora-Regular.ttf);
+
 }
 
 @font-face {
-  font-family: "InterRegular";
-  src: url(../assets/fonts/Inter-Regular.ttf);
+    font-family: "InterRegular";
+    src: url(../assets/fonts/Inter-Regular.ttf);
 }
 
 @font-face {
-  font-family: "InterMedium";
-  src: url(../assets/fonts/Inter-Medium.ttf);
-}
+    font-family: "InterMedium";
+    src: url(../assets/fonts/Inter-Medium.ttf);
+}    
+
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  --corBanner: #eff8ff;
-  --corCard2: #293145;
-  --buttonColor: #0f9afe;
-  --contatoParagraphColor: #dbdbdb;
-  --titleColor: #293145;
-  --titleFont: "SoraSemiBold";
-  --paragraphFont: "InterRegular";
-  --cardTitleFont: "SoraSemiBold";
-  --navItemsFont: "InterMedium";
-  --paragraphColor: #6e7275;
-  --footerFont: "SoraRegular";
+        --corBanner:#EFF8FF;
+        --corCard2: #293145;
+        --buttonColor: #0F9AFE;
+        --contatoParagraphColor: #DBDBDB;
+        --titleColor: #293145;
+        --titleFont: "SoraSemiBold";
+        --paragraphFont: "InterRegular";
+        --cardTitleFont: "SoraSemiBold";
+        --navItemsFont: "InterMedium";
+        --paragraphColor: #6E7275;
+        --footerFont: "SoraRegular";
 }
 
+
 .container-grid {
-  max-width: 900px;
-  margin: 0 auto;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 header {
-  width: 100%;
-  height: 40px;
-  background-color: #ffffff;
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
 }
 
 .headerContent {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* .headerContent > img {
-} */
-
-.headerContent > nav {
-  width: 50%;
+.headerContent>img {
 }
 
-.headerContent > nav > ul {
-  list-style-type: none;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.headerContent>nav {
+    width: 50%;
 }
 
-.headerContent > nav > ul > li > a {
-  text-decoration: none;
-  font-family: var(--navItemsFont);
-  color: var(--paragraphColor);
+.headerContent>nav>ul {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerContent>nav>ul>li>a {
+    text-decoration: none;
+    font-family:  var(--navItemsFont);
+    color: var(--paragraphColor);
 }
 
 .banner {
-  width: 100%;
-  height: 450px;
-  background-color: var(--corBanner);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 450px;
+    background-color: var(--corBanner);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bannerContent {
-  height: 80%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+.bannerContent{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.bannerContent > img {
-  width: 390px;
-  height: 100%;
+.bannerContent>img{
+    width: 390px ;
+    height: 100%;
 }
 
-.bannerContent > div {
-  width: 4200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 35px;
+.bannerContent>div{
+    width: 4200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    
 }
 
-.bannerContent > div > h1 {
-  font-family: var(--titleFont);
-  color: var(--titleColor);
-  font-size: 43px;
+.bannerContent>div>h1{
+    font-family: var(--titleFont);
+    color: var(--titleColor);
+    font-size: 43px;
 }
 
-.bannerContent > div > button {
-  background-color: var(--buttonColor);
-  width: 150px;
-  height: 40px;
-  border-radius: 18px;
-  border: none;
-  color: white;
-  font-family: var(--navItemsFont);
+.bannerContent>div>button{
+    background-color: var(--buttonColor);
+    width: 150px;
+    height: 40px;
+    border-radius: 18px;
+    border: none;
+    color: white;
+    font-family: var(--navItemsFont);
 }
 
-.middle {
-  width: 100%;
-  height: 380px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  padding: 40px;
+.middle{
+    width:100% ;
+    height: 380px;
+    background-color: white;
+    display: flex;
+    justify-content:  center;
+    padding: 40px;
 }
 
-.middleContent {
-  width: 800px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  align-items: center;
+.middleContent{
+    width: 800px;
+    height:100% ;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+
 }
 
-.middleCards {
-  width: 100%;
-  height: 180px;
-  display: flex;
-  gap: 100px;
+.middleCards{
+
+    width: 100%;
+    height: 180px;
+    display: flex;
+    gap: 100px;
 }
 
-.middleCards > div {
-  width: 200px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 15px;
+.middleCards>div{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    
 }
 
-.middleContent > h1 {
-  font-family: var(--titleFont);
-  color: var(--titleColor);
-  font-size: 35px;
+.middleContent>h1{
+    font-family: var(--titleFont);
+    color: var(--titleColor);
+    font-size:35px;
 }
 
-.middleCards > div > h3 {
-  font-family: var(--cardTitleFont);
-  color: var(--titleColor);
+.middleCards>div>h3 {
+    font-family: var(--cardTitleFont);
+    color: var(--titleColor);
 }
 
-.middleCards > div > p {
-  font-family: var(--paragraphFont);
-  color: var(--paragraphColor);
+.middleCards>div>p {
+    font-family: var(--paragraphFont);
+    color:var(--paragraphColor)
 }
 
-.app {
-  width: 100%;
-  height: 370px;
-  background-color: var(--corBanner);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.app{
+    width: 100%;
+    height: 370px;
+    background-color: var(--corBanner);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .appContent {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .appContentText {
-  width: 500px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 
 .appContentImages {
-  width: 365px;
-  display: flex;
-  justify-content: space-between;
+    width: 365px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.appContentText > article {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.appContentText>article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.appContentText > article > h1 {
-  font-family: var(--titleFont);
-  color: var(--titleColor);
-  font-size: 26px;
+.appContentText>article>h1 {
+    font-family: var(--titleFont);
+    color: var(--titleColor);
+    font-size: 26px;
 }
 
-.appContentText > article > p {
-  font-family: var(--paragraphFont);
-  color: var(--paragraphColor);
-  font-size: 14px;
-  width: 80%;
+.appContentText>article>p {
+    font-family: var(--paragraphFont);
+    color: var(--paragraphColor);
+    font-size: 14px;
 }
 
-.appContent > img {
-  width: 300px;
-  height: 300px;
+.appContent>img {
+    width: 300px;
+    height: 300px;
 }
 
 .plans {
-  width: 100%;
-  height: 580px;
-  background-color: white;
-  display: flex;
-  align-items: center;
+    width: 100%;
+    height: 580px;
+    background-color: white;
+    display: flex;
+    align-items: center;
 }
 
 .plansContent {
-  width: 100%;
-  height: 480px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
+    width: 100%;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
 }
 
-.plansContent > div {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.plansContent>div {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.plansContent > div > h1 {
-  font-family: var(--titleFont);
-  color: var(--titleColor);
-  font-size: 35px;
+.plansContent>div>h1 {
+    font-family: var(--titleFont);
+    color: var(--titleColor);
+    font-size: 35px;
 }
 
-.plansContent > div > p {
-  font-family: var(--paragraphFont);
-  color: var(--paragraphColor);
-  font-size: 15px;
+.plansContent>div>p {
+    font-family: var(--paragraphFont);
+    color: var(--paragraphColor);
+    font-size: 15px;
 }
 
 .cardsContainer {
-  width: 800px;
-  height: 320px;
-  display: flex;
-  gap: 20px;
+    width: 800px;
+    height: 320px;
+    display: flex;
+    gap: 20px;
 }
 
 [class^="cardBody"] {
-  width: 270px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: space-evenly;
-  border-radius: 7px;
-  box-shadow: 1px 1px 15px #00000022;
+    width: 270px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 7px;
+    box-shadow: 1px 1px 15px #00000022;
 }
 
 .cardBody {
-  background-color: var(--corBanner);
+    background-color: var(--corBanner);
 }
 
 .cardBody-prata {
-  background-color: var(--corCard2);
+    background-color: var(--corCard2);
 }
 
-.cardBody-prata > h3 {
-  color: white;
-  font-family: var(--titleFont);
+.cardBody-prata>h3 {
+    color: white;
+    font-family: var(--titleFont);
 }
 
-.cardBody-prata > p {
-  font-family: var(--paragraphFont);
-  color: var(--contatoParagraphColor);
-  font-size: 14px;
+.cardBody-prata>p {
+    font-family: var(--paragraphFont);
+    color: var(--contatoParagraphColor);
+    font-size: 14px;
 }
 
-.cardBody-prata > button {
-  background-color: var(--buttonColor);
-  width: 150px;
-  height: 40px;
-  border-radius: 18px;
-  border: none;
-  color: white;
-  font-family: var(--navItemsFont);
-  border: none;
+.cardBody-prata>button {
+    background-color: var(--buttonColor);
+    width: 150px;
+    height: 40px;
+    border-radius: 18px;
+    border: none;
+    color: white;
+    font-family: var(--navItemsFont);
+    border: none;
 }
 
 .cardBody-prata .btnPreferido {
-  background-color: var(--buttonColor);
-  width: 135px;
-  height: 22px;
-  border-radius: 18px;
-  border: none;
-  color: white;
-  font-family: var(--navItemsFont);
-  border: none;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+    background-color: var(--buttonColor);
+    width: 135px;
+    height: 22px;
+    border-radius: 18px;
+    border: none;
+    color: white;
+    font-family: var(--navItemsFont);
+    border: none;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
-.cardBody > h3 {
-  font-family: var(--titleFont);
-  color: var(--titleColor);
+.cardBody>h3 {
+    font-family: var(--titleFont);
+    color: var(--titleColor)
 }
 
-.cardBody > p {
-  color: var(--paragraphColor);
-  font-family: var(--paragraphFont);
-  font-size: 14px;
+.cardBody>p {
+    color: var(--paragraphColor);
+    font-family: var(--paragraphFont);
+    font-size: 14px;
 }
 
-.cardBody > button {
-  background-color: var(--buttonColor);
-  width: 150px;
-  height: 40px;
-  border-radius: 18px;
-  border: none;
-  color: white;
-  font-family: var(--navItemsFont);
-  border: none;
+.cardBody>button {
+    background-color: var(--buttonColor);
+    width: 150px;
+    height: 40px;
+    border-radius: 18px;
+    border: none;
+    color: white;
+    font-family: var(--navItemsFont);
+    border: none;
 }
 
-.cardBody > div {
-  width: 140px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  color: var(--titleColor);
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 22px;
+.cardBody>div {
+    width: 140px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    color: var(--titleColor);
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
 }
 
-.cardBody > div > span {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-  font-size: 21px;
+.cardBody>div>span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    font-size: 21px;
 }
 
-.cardBody-prata > div {
-  width: 140px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  color: var(--titleColor);
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-  color: white;
+.cardBody-prata>div {
+    width: 140px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    color: var(--titleColor);
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
 }
 
-.cardBody-prata > div > span {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-  font-size: 21px;
+.cardBody-prata>div>span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    font-size: 21px;
 }
 
-.contact {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  background-image: url(../assets/images/computer.png);
-  background-position: 5px;
-  background-size: cover;
+.contact{
+    width: 100%;
+    height: 300px; 
+    display: flex;
+    background-image: url(../assets/images/computer.png);
+    background-position: 5px;
+    background-size: cover;
 }
-.contactContent {
-  width: 100%;
-  height: 100%;
-  background-color: #293145b2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.div1 {
-  width: 410px;
-  height: 90px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.contactContent{
+    width: 100%;
+    height: 100%;
+    background-color: #293145B2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.div1 > h1 {
-  font-family: var(--titleFont);
-  color: white;
-  font-size: 35px;
+.div1{
+    width: 410px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
 }
 
-.div1 > p {
-  color: var(--contatoParagraphColor);
-  font-family: var(--paragraphFont);
-  font-size: 14px;
+.div1>h1{
+    font-family: var(--titleFont);
+    color: white;
+    font-size: 35px;
 }
 
-.div2 {
-  height: 40px;
-  width: 350px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.div1>p{
+    color: var(--contatoParagraphColor);
+    font-family: var(--paragraphFont);
+    font-size: 14px;
 }
 
-.div2 > input {
-  border: none;
-  background-color: transparent;
-  border-bottom: 1px solid white;
-  width: 220px;
-  outline: none;
-  padding-bottom: 5px;
-  color: white;
+.div2{
+    height:40px ;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.div2 > input::placeholder {
-  color: white;
+.div2>input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    width: 220px;
+    outline: none;
+    padding-bottom: 5px;
+    color: white;
 }
 
-.div2 > button {
-  background-color: var(--buttonColor);
-  width: 95px;
-  height: 30px;
-  border-radius: 18px;
-  border: none;
-  color: white;
-  font-family: var(--navItemsFont);
-  border: none;
+.div2>input::placeholder{
+    color: white;
+}
+
+.div2>button{
+    background-color: var(--buttonColor);
+    width: 95px;
+    height: 30px;
+    border-radius: 18px;
+    border: none;
+    color: white;
+    font-family: var(--navItemsFont);
+    border: none;
 }
 
 footer {
-  background-color: white;
-  width: 100%;
-  height: 60px;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--footerFont);
-  font-size: 15px;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--footerFont);
+    font-size: 15px;
 }
 
 #btnMobileNav {
+<<<<<<< HEAD
   display: none;
 }
 
@@ -584,142 +592,246 @@ footer {
   }
 
   .hidden {
+=======
+>>>>>>> parent of a7be5da (Mobile estilização 1.1)
     display: none;
-  }
+}
 
-  .headerContent > img {
-    width: 100px;
-    height: 100%;
-  }
 
-  .banner {
-    width: 100vw;
-    height: 780px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-  }
+                                /* abaixo mobile */
 
-  .bannerContent {
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-  }
+@media screen and (max-width: 414px) {
 
-  .bannerContent > div {
-    width: 100vw;
-    height: 100%;
-    padding-inline: 20px;
-  }
+    .container-grid {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
 
-  .middle {
-    display: flex;
-    flex-direction: column;
-    height: 85vh;
-    width: 100vw;
-    align-items: center;
-    padding: 14px;
-  }
 
-  .middleContent {
-    width: 100vw;
-    height: 100%;
-  }
+    body {
+        overflow-x: hidden;
+    }
 
-  .middleCards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    gap: 15px;
-  }
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 
-  .app {
-    width: 100vw;
-    height: 83vh;
-    display: flex;
-    flex-direction: column;
-  }
+    header {
+        width: 100vw;
+        height: 40px;
+    }
 
-  .appContent {
-    width: 100vw;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-  }
+    .headerContent {
+        width: 100%;
+        height: 100%;
 
-  .appContentText {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    align-items: center;
-  }
+    }
 
-  .appContentText > article > p {
-    padding: 5px;
-    align-self: center;
-  }
+    #btnMobileNav {
+        display: block;
+        border: none;
+        width: 40px;
+        background-color: transparent;
+        z-index: 2;
+    }
+    
+    .headerContent>nav {
+        width: 75vw;
+    }
 
-  .appContentImages {
-    width: 100%;
-    height: 60px;
-    display: flex;
-  }
+    .headerContent>nav>ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.438);
+    }
 
-  .appContentImages > img {
-    width: 100%;
-    height: 100%;
-  }
+    .headerContent>nav>ul>li {
+        width: 45%;
+        height: 45px;
 
-  .plans {
-    height: 175vh;
-    flex-direction: column;
-    align-items: center;
-  }
+    }
+    
+    .mobileNavBar .firstNavItem {
+        width: 80%;
+        height: 45px;
+    }
 
-  .plansContent {
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-  }
+    .headerContent>nav>ul>li>a {
+      color: black;  
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+    }
 
-  .plansContent > div {
-    width: 100%;
-  }
+    .headerContent>nav>ul>li>a:hover {
+        background-color: red;  
+        transition: linear .4s all;
+    }
 
-  .cardsContainer {
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 0 10px 0;
-  }
+    .mobileNavBar {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: block;
+        background-color: white;
+        transform: translateX(100%);
+        transition: all 0.3s ease;
+        width: 90%;
+        height: 90vh;
+    }
 
-  [class^="cardBody"] {
-    height: 50vh;
-    padding: 10px;
-  }
+    .open {
+        transform: translateX(0);
+    }
 
-  .contact {
-    flex-direction: column;
-    width: 100vw;
-    height: 40vh;
-  }
+    .hidden {
+        display: none;
+    }
 
-  .contactContent {
-    width: 100%;
-    height: 100%;
-  }
+    .headerContent>img {
+        width: 100px;
+        height: 100%;
+    }
 
-  .div1 {
-    height: 17vh;
-  }
+    .banner {
+        width: 100vw;
+        height: 780px;
+        display: flex;
+        flex-direction: column;
+    }
 
-  .div1 > p {
-    width: 100%;
-    height: 50%;
-    padding: 20px;
-  }
+    .bannerContent {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .bannerContent>div {
+        width: 100vw;
+        height: 100%;   
+        padding-inline: 20px;
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column;
+        height: 85vh;
+        width: 100vw;
+        align-items: center;
+        padding: 14px;
+    }
+
+    .middleContent {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .middleCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 15px;
+    }
+
+    .app {
+        width: 100vw;
+        height: 83vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .appContent {
+        width: 100vw;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .appContentText {
+        width: 100%;
+        height: 100%;
+        text-align: center; 
+        align-items: center;
+    }
+
+    .appContentText>article {
+    }
+
+    .appContentText>article>p {
+        padding: 5px;
+    }
+
+    .appContentImages {
+        width: 100%;
+        height: 60px;
+        display: flex;
+    }
+
+    .appContentImages>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .plans {
+        height: 175vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plansContent {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plansContent>div {
+        width: 100%;
+    }
+
+    .cardsContainer {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0 10px 0;
+    }
+
+    [class^="cardBody"] {
+        height: 50vh;
+        padding: 10px;
+    }
+
+    .contact {
+        flex-direction: column;
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .contactContent {
+        width: 100%;
+        height: 100%;
+    }
+
+    .div1 {
+        height: 17vh;
+    }
+    
+    .div1>p {
+        width: 100%;
+        height: 50%;
+        padding: 20px;
+    }
+
 }
