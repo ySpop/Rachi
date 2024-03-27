@@ -230,6 +230,7 @@ header {
     font-family: var(--paragraphFont);
     color: var(--paragraphColor);
     font-size: 14px;
+    width: 80%;
 }
 
 .appContent>img {
@@ -483,117 +484,6 @@ footer {
 }
 
 #btnMobileNav {
-<<<<<<< HEAD
-  display: none;
-}
-
-/* abaixo mobile */
-
-@media screen and (max-width: 410px) {
-  .container-grid {
-    max-width: 90vw;
-    margin: 0 auto;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  header {
-    width: 100vw;
-    height: 40px;
-    position: fixed;
-  }
-
-  .headerContent {
-    width: 100%;
-    height: 100%;
-  }
-
-  #btnMobileNav {
-    display: block;
-    border: none;
-    width: 40px;
-    background-color: transparent;
-    z-index: 2;
-    border: 2px solid red;
-  }
-
-  .headerContent > nav {
-    width: 75vw;
-  }
-
-  .headerContent > nav > ul {
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.438);
-  }
-
-  .headerContent > nav > ul > li {
-    width: 90%;
-    height: 60px;
-    /* border-top: 2px solid gray;
-    border-bottom: 2px solid var(--buttonColor); */
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-  }
-
-  .mobileNavBar .firstNavItem {
-    width: 90%;
-    height: 60px;
-  }
-
-  .mobileNavBar .firstNavItem > a {
-    width: 90%;
-    height: 100%;
-  }
-
-  .headerContent > nav > ul > li > a {
-    color: black;
-    width: 90%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    letter-spacing: 1.2px;
-    font-family: var(--navItemsFont);
-  }
-
-  .headerContent > nav > ul > li > a:hover {
-    transform: scale(1.1);
-    transition: linear 0.2s all;
-    border-bottom: 3px solid var(--buttonColor);
-  }
-
-  .mobileNavBar {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    display: block;
-    background-color: white;
-    transform: translateX(100%);
-    transition: all 0.4s ease;
-    width: 90%;
-    height: 75vh;
-  }
-
-  .open {
-    transform: translateX(0);
-  }
-
-  .hidden {
-=======
->>>>>>> parent of a7be5da (Mobile estilização 1.1)
     display: none;
 }
 
@@ -764,9 +654,6 @@ footer {
         height: 100%;
         text-align: center; 
         align-items: center;
-    }
-
-    .appContentText>article {
     }
 
     .appContentText>article>p {
